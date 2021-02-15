@@ -1,0 +1,249 @@
+header .navbar {
+  width: 100%;
+  height: 85px;
+  background-color: #181818;
+}
+header .navbar .nav-link {
+  font-size: 18px;
+  color: #FFFFFF;
+}
+header .navbar .nav-link:hover {
+  color: #0278af;
+}
+header .navbar .dropdown-menu {
+  background-color: #2e2f30;
+}
+header .navbar .dropdown-menu a {
+  color: #FFFFFF;
+}
+header .navbar .dropdown-menu a:hover {
+  background-color: #2e2f30 !important;
+  color: #0278af;
+}
+header .navbar .dropdown-divider {
+  border-top: #024f72;
+}
+header .logo-brand {
+  width: 300px;
+  height: auto;
+  margin-right: 250px;
+}
+header .navbar-toggler i {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+header .navbar-toggler:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 998px) {
+  header .container {
+    background-color: #181818;
+  }
+  header .container ul {
+    padding: 15px;
+  }
+  header .logo-brand {
+    margin-right: 0;
+    width: 200px;
+  }
+}
+main .Contactos {
+  margin: 50px 0px;
+}
+main .Contactos .con-for {
+  display: grid;
+  max-width: 500px;
+  height: 320px;
+  grid-template-columns: 157.5px 320px;
+  margin: auto;
+  box-shadow: 5px 5px 30px #aaaaaa;
+  border-radius: 15px;
+}
+main .Contactos .con-for .info {
+  background-color: #181818;
+  border-radius: 15px 0 0 15px;
+  height: 320px;
+}
+main .Contactos .con-for .info img {
+  width: 90%;
+  display: block;
+  margin: auto;
+  margin-top: 60px;
+}
+main .Contactos .con-for .info h4 {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+main .Contactos .con-for .info p {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+}
+main .Contactos .con-for .formulario {
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  margin-left: 0;
+}
+main .Contactos .con-for .formulario h5 {
+  color: #2e2f30;
+  margin-bottom: 40px;
+}
+main .Contactos .con-for .formulario .controls {
+  width: 300px;
+  height: 25px;
+  padding: 6px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  border: 2px solid #aaaaaa;
+  font-size: 15px;
+  outline: none;
+}
+main .Contactos .con-for .formulario ::placeholder {
+  font-size: 12px;
+}
+main .Contactos .con-for .formulario .mensaje {
+  width: 300px;
+  height: 30px;
+  padding: 25px;
+  padding-left: 5px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #aaaaaa;
+  font-size: 15px;
+}
+main .Contactos .con-for .formulario .boton {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #024f72;
+  color: #FFFFFF;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 850px) {
+  main .Contactos .con-for {
+    border-radius: 12px;
+  }
+}
+@media screen and (max-width: 550px) {
+  main .Contactos .con-for {
+    max-width: 340px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 400px;
+    height: 600px;
+  }
+  main .Contactos .con-for .info {
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+  }
+  main .Contactos .con-for .info h4 {
+    font-size: 25px;
+  }
+  main .Contactos .con-for .info img {
+    display: none;
+  }
+}
+footer {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #181818;
+  padding: 20px;
+}
+footer .con-1 img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer .con-1 div {
+  width: 70%;
+  display: block;
+  margin: auto;
+  display: flex;
+}
+footer .con-1 div i {
+  color: #FFFFFF;
+  font-size: 25px;
+  padding: 3px 15px;
+}
+footer .con-1 div p {
+  color: #FFFFFF;
+}
+footer .con-2 {
+  display: block;
+  margin: auto;
+}
+footer .con-2 h4 {
+  color: #FFFFFF;
+  margin-top: 30px;
+  font-size: 28px;
+  margin-left: 20px;
+}
+footer .con-2 ul li {
+  color: #FFFFFF;
+  font-size: 14px;
+}
+footer .con-2 ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+footer .con-2 ul li a:hover {
+  color: #0278af;
+}
+footer .con-3 {
+  display: block;
+  margin: auto;
+  margin-left: 50px;
+}
+footer .con-3 div {
+  display: flex;
+}
+footer .con-3 div i {
+  color: #FFFFFF;
+  font-size: 25px;
+  padding: 3px 15px;
+}
+footer .con-3 div p {
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #181818;
+    padding: 20px;
+  }
+  footer img {
+    width: 50%;
+  }
+  footer .con-2 {
+    margin: 0;
+    margin-left: 115px;
+  }
+  footer .con-3 {
+    margin-left: 115px;
+  }
+}
+@media screen and (max-width: 430px) {
+  footer {
+    max-width: 430px;
+  }
+  footer .con-2 {
+    margin-left: 40px;
+  }
+  footer .con-3 {
+    margin-left: 50px;
+  }
+}
+
+/*# sourceMappingURL=contactos.css.map */

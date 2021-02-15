@@ -1,0 +1,58 @@
+main {
+    
+    .nosotros {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 900px;
+        margin: auto;
+        margin-bottom: 150px;
+
+        h4 {
+            text-align: center;
+            color: $color-letra1;
+            margin: 30px 0px;
+        }
+        p {
+            text-align: justify;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            margin-top: 100px;
+            width: 70%;
+            height: auto;
+            box-shadow: 1px 1px 8px $color-sombra;
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    main {
+    
+        .nosotros {
+            max-width: 350px !important;
+            margin: auto;
+            grid-template-columns: 1fr !important;
+            img {
+                display: none !important;
+            }
+        }
+    
+    }
+
+}
+
+@media screen and (max-width: 360px){
+    main {
+    
+        .nosotros {
+            max-width: 300px !important;
+            
+        }
+    
+    }
+
+}

@@ -1,0 +1,56 @@
+header {
+    .navbar {
+        width: 100%;
+        height: 85px;
+        background-color: $color-menu;
+        .nav-link {
+            font-size: 18px;
+            color: $color-blanco;
+        }
+        .nav-link:hover {
+            color: $color-hover;
+        }
+
+        .dropdown-menu{
+            background-color: $color-letra1;
+
+            a {
+                color: $color-blanco;
+            } a:hover{ background-color: $color-letra1 !important; color: $color-hover;}
+        }
+
+        .dropdown-divider {
+            border-top: $color-botones;
+        }
+    }
+
+    .logo-brand {
+        width: 300px;
+        height: auto;
+        margin-right: 250px;
+    }
+    .navbar-toggler i {
+        font-size: 30px;
+        color: $color-blanco;
+    }
+    .navbar-toggler:focus {
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 998px){
+
+    header{
+        .container{
+            background-color: $color-menu;
+            
+            ul{
+                padding: 15px;
+            }
+        }
+        .logo-brand{
+            margin-right: 0;
+            width: 200px;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+main {
+    h2 {
+        font-size: 40px;
+        color: $color-menu;
+        text-align: center;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-gap: 20px;
+        max-width: 900px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 100px;
+
+        .servicios_caja {
+            width: 100%;
+            height: 100%;
+            border: 2px solid $color-botones;
+            background-color: $color-blanco;
+            box-shadow: 1px 1px 8px $color-sombra;
+            padding: 10px;
+            border-radius: 15px;
+            display: block;
+            margin: auto;
+
+            h4 {
+                text-align: center;
+                color: $color-botones;
+                margin: 10px 0px;
+            }
+
+            p {
+                text-align: justify;
+                margin-top: 20px;
+                color: $color-letra1;
+                margin-bottom: 25px;
+            }
+
+            .container {
+                a {
+                    display: block;
+                    margin: auto;
+                    width: 150px;
+                    height: 35px;
+                    background-color: $color-botones;
+                    color: $color-blanco;
+                    outline: none;
+                    border: none;
+                    font-size: 17px;
+                }
+                a:hover {
+                    background-color: $color-letra1;
+                    color: $color-blanco;
+                }
+                .modal-content {
+                    .modal-header {
+                        h4 {
+                            display: block;
+                            margin: auto;
+                            color: $color-botones;
+                        }
+
+                        button {
+                            background-color: $color-blanco;
+                            border: none;
+                            outline: none;
+                            font-size: 20px;
+                            color: $color-letra1;
+                        }
+                    }
+
+                    .modal-body {
+                        img {
+                            display: block;
+                            margin: auto;
+                            width: 70%;
+                            height: auto;
+                        }
+                    }
+
+                    .modal-footer {
+                        button {
+                            background-color: $color-botones;
+                            color: $color-blanco;
+                            height: 35px;
+                            padding-top: 0px;
+                        }
+                        button:hover {
+                            background-color: $color-letra1;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            background-color: $color-letra1;
+                            text-align: center;
+                            border-radius: 5px;
+                            margin: 0;
+                            padding-top: 3px;
+                            font-size: 16px;
+                        }
+                        a:hover {
+                            background-color: $color-botones;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 950px){
+
+    main {
+        .servicios{
+            max-width: 600px;
+        }
+    }
+}
+
+@media screen and (max-width: 650px){
+
+    main {
+        .servicios{
+            max-width: 300px;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto ;
+
+            .modal-content{
+                width: 300px;
+            }
+        }
+    }
+}

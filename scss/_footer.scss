@@ -1,0 +1,114 @@
+
+footer{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $color-menu;
+    padding: 20px;
+
+    .con-1{
+        img{
+            width: 70%;
+            display: block;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        div {
+            width: 70%;
+            display: block;
+            margin: auto;
+            display: flex;
+            i{
+                color: $color-blanco;
+                font-size: 25px;
+                padding:3px 15px;
+            }
+            p{
+                color: $color-blanco;
+            }
+        }
+    }
+
+    .con-2{
+        display: block;
+        margin: auto;
+        h4{
+            color: $color-blanco;
+            margin-top: 30px;
+            font-size: 28px;
+            margin-left: 20px;
+        }
+
+        ul{
+            li{
+                color: $color-blanco;
+                font-size: 14px;
+
+                a{
+                    color: $color-blanco;
+                    text-decoration: none;
+                } a:hover{color: $color-hover;}
+            }
+        }
+    }
+
+    .con-3{
+        display: block;
+        margin: auto;
+        margin-left: 50px;
+
+        div{
+            display: flex;
+            i{
+                color: $color-blanco;
+                font-size: 25px;
+                padding:3px 15px;
+            }
+            p{
+                color: $color-blanco;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr ;
+        background-color: $color-menu;
+        padding: 20px;
+
+        img{
+            width: 50%;
+        }
+
+        .con-2{
+            margin: 0;
+            margin-left: 115px;
+        }
+
+        .con-3{
+            margin-left: 115px;
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width: 430px){
+    footer{
+        max-width: 430px;
+
+        .con-2{
+            margin-left: 40px;
+        }
+
+        .con-3{
+            margin-left: 50px;
+        }
+    }
+
+}
